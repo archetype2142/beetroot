@@ -1,0 +1,81 @@
+@import './colors.scss';
+@import 'bulma/bulma';
+@import  './fonts';
+@import './navbar';
+@import './utils';
+
+body {
+  background-color: $beetroot_white;
+}
+
+.footer {
+  padding: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right_section {
+  color: $beetroot_white;
+}
+
+#contact_us {
+  color: $beetroot_white;
+}
+
+.main {
+  height: 100vh;
+}
+
+#got_image {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.main_logo {
+  max-width: 30vw;
+  transform: translateZ(20px);
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-flex-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: map-get($beetroot, 'red-100');
+  color: white;
+}
+
+.label {
+  color: map-get($beetroot, 'red-pop-10');
+}
+
+.input, .textarea {
+  background-color: map-get($beetroot, 'red-pop-10');
+}
+
+.button.is-primary {
+  font-weight: bold;
+  color: map-get($beetroot, 'red-100');
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social_icon {
+  transition: all .2s ease-in-out;
+}
+
+.social_icon:hover {
+  transform: scale(1.3); 
+}

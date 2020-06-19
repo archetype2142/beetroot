@@ -1,0 +1,76 @@
+$beetroot_white: #f6efef;
+
+$beetroot: (
+  'red-10': #ece7e9,
+  'red-20': #d9d0d3,
+  'red-30': #c6b8bd,
+  'red-40': #b4a1a8,
+  'red-50': #a18992,
+  'red-60': #8e727c,
+  'red-70': #7c5a67,
+  'red-80': #694251,
+  'red-90': #562b3b,
+  'red-100': #441426,
+
+  'red-pop-10': #f1e7ea,
+  'red-pop-20': #e3d0d5,
+  'red-pop-30': #d6b8c1,
+  'red-pop-40': #c8a1ac,
+  'red-pop-50': #bb8998,
+  'red-pop-60': #ad7283,
+  'red-pop-70': #9f5a6e,
+  'red-pop-80': #92425a,
+  'red-pop-90': #842b45,
+  'red-pop-100': #771431,
+
+  'blue-10': #f7f7f7,
+  'blue-20': #d9eef6,
+  'blue-30': #bee6f6,
+  'blue-40': #9fd6f5,
+  'blue-50': #81c4f5,
+  'blue-60': #66b2f5,
+  'blue-70': #51a1f5,
+  'blue-80': #4190f6,
+  'blue-90': #3b82d9,
+  'blue-100': #3675c0,
+
+  'blue-pop-10': #ecf9fe,
+  'blue-pop-20': #ccf0fe,
+  'blue-pop-30': #b0e8fe,
+  'blue-pop-40': #90d8fe,
+  'blue-pop-50': #72c5fe,
+  'blue-pop-60': #55b3fe,
+  'blue-pop-70': #3fa1fe,
+  'blue-pop-80': #2d90fe,
+  'blue-pop-90': #2982e0,
+  'blue-pop-100': #2675c7,
+
+  'green-10': #eff9ed,
+  'green-20': #caf4c3,
+  'green-30': #adef9f,
+  'green-40': #8ae37b,
+  'green-50': #6fd75d,
+  'green-60': #4fc63e,
+  'green-70': #3eb82b,
+  'green-80': #2ea91e,
+  'green-90': #2a981b,
+  'green-100': #258818,
+
+  'tangerine-10': #fcfbf6,
+  'tangerine-20': #fcf4d4,
+  'tangerine-30': #fceeb7,
+  'tangerine-40': #fbe097,
+  'tangerine-50': #fad179,
+  'tangerine-60': #f7c05a,
+  'tangerine-70': #f5b045,
+  'tangerine-80': #f4a134,
+  'tangerine-90': #d79130,
+  'tangerine-100': #bf822b
+);
+
+$primary: map-get($beetroot, 'red-30');
+$link: map-get($beetroot, 'blue-80');
+$info: map-get($beetroot, 'blue-pop-80');
+$success: map-get($beetroot, 'green-80');
+$warning: map-get($beetroot, 'tangerine-80');
+$danger: map-get($beetroot, 'red-pop-40');

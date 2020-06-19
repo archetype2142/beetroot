@@ -1,0 +1,18 @@
+.navbar-item, .navbar-link {
+  font-weight: bold;
+  color: map-get($beetroot, 'red-70');
+}
+
+a.navbar-item:hover {
+  background-color: none;
+  color: map-get($beetroot, 'red-pop-70');
+}
+
+.navbar-item img {
+  max-height: 5.75rem;
+}
+
+.navbar-start {
+  flex-grow: 1; 
+  justify-content: space-evenly;
+}

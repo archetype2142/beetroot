@@ -1,0 +1,9 @@
+section.main.is-flex.is-flex-centered
+  .container.is-flex.is-flex-centered id="got_image"
+    = image_tag "logo.png", alt: t("navbar.logo"), id: "main_logo", class: "image main_logo", 'data-tilt': true
+
+section.contact id="contact"
+  .container
+    = render 'contact_form'
+
+= javascript_pack_tag "parallax", 'data-turbolinks-track': 'reload'
