@@ -428,3 +428,12 @@ body {
     }
   }
 }
+
+.bottom_button {
+  justify-content: flex-end; 
+  align-items: center;
+
+  @include touch {
+    justify-content: flex-start;
+  }
+}
