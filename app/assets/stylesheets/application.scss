@@ -7,6 +7,11 @@
 body {
   background-color: $beetroot_white;
 }
+.navbar>.container  {
+  @include touch {
+    min-height: initial;
+  }
+}
 
 .footer {
   padding: initial;

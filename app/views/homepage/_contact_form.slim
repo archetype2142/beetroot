@@ -1,29 +1,30 @@
 = javascript_include_tag "https://www.google.com/recaptcha/api.js", defer: true, async: true 
 
 h1.title.has-text-centered.has-text-primary.has-mb-60 = t("contact_form.title").upcase
-.columns.is-mobile
+.columns
   .column
-    = form_with url: contact_form_index_path, id: "captcha_form" do |f|
-      .field
-        .control.styled-input
-          label.label = t("contact_form.name").upcase
-          = f.text_field :name, class: "input", placeholder: t("contact_form.name"), required: true
-      .field
-        .control.styled-input
-          label.label = t("contact_form.email").upcase
-          = f.email_field :email, class: "input", placeholder: t("contact_form.email"), required: true
-      .field
-        .control.styled-input
-          label.label = t("contact_form.message").upcase
-          = f.text_area :message, class: "textarea", placeholder: t("contact_form.message"), required: true
-      .columns
-        .column
-          div class="g-recaptcha" data-sitekey="6Lfwn6QZAAAAANG-H6jsoz1XDe2qkQpFyGZuRa01" required="true"
-        .column.is-flex style="justify-content: flex-end; align-items: center"
-          .field
-            .control
-              = f.submit t("contact_form.send"), class: "button is-primary"
-  
+    .container
+      = form_with url: contact_form_index_path, id: "captcha_form" do |f|
+        .field
+          .control.styled-input
+            label.label = t("contact_form.name").upcase
+            = f.text_field :name, class: "input", placeholder: t("contact_form.name"), required: true
+        .field
+          .control.styled-input
+            label.label = t("contact_form.email").upcase
+            = f.email_field :email, class: "input", placeholder: t("contact_form.email"), required: true
+        .field
+          .control.styled-input
+            label.label = t("contact_form.message").upcase
+            = f.text_area :message, class: "textarea", placeholder: t("contact_form.message"), required: true
+        .columns
+          .column
+            div class="g-recaptcha" data-sitekey="6Lfwn6QZAAAAANG-H6jsoz1XDe2qkQpFyGZuRa01" required="true"
+          .column.is-flex style="justify-content: flex-end; align-items: center"
+            .field
+              .control
+                = f.submit t("contact_form.send"), class: "button is-primary"
+    
   .column.is-flex.is-flex-centered style="flex-direction: column" id="right_section"
     .contact
       h2.subtitle.is-size-4.has-text-primary 
