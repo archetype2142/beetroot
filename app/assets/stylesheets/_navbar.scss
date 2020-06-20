@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .navbar-item, .navbar-link {
   font-weight: bold;
   color: map-get($beetroot, 'red-70');
@@ -16,3 +18,4 @@ a.navbar-item:hover {
   flex-grow: 1; 
   justify-content: space-evenly;
 }
+
