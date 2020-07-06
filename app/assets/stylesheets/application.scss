@@ -5,13 +5,38 @@
 
 body {
   background-color: $beetroot_white;
+  // background: rgb(208,16,86);
+  // background: radial-gradient(circle, rgba(208,16,86,1) 0%, rgba(130,10,55,1) 55%, rgba(68,20,38,1) 89%);
 }
+
+.canvas-container{
+  height: 100vh; 
+}
+
+#got_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  // z-index: -1;
+}
+
 .navbar>.container  {
   @include touch {
     min-height: initial;
   }
 }
 
+.mob_hide {
+  @include touch {
+    display: none;
+  }
+}
 .footer {
   padding: initial;
   display: flex;
@@ -39,6 +64,10 @@ body {
 .main_logo {
   max-width: 30vw;
   transform: translateZ(20px);
+
+  @include touch {
+    max-width: 80vw;
+  }
 }
 
 .is-flex {

@@ -9,3 +9,10 @@ pl:
     contact: Kontakt
     work: Produkcje
     crew: Ekipa
+    logo: Logo
+  contact_form:
+    name: name
+    email: email
+    message: message
+    title: Contact Form
+    send: Send

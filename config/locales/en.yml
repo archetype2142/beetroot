@@ -3,12 +3,9 @@ en:
     en: English
     pl: Polish
   navbar:
-    preproduction: Preproduction
-    onset: On set
-    postproduction: Postproduction
     contact: Contact Us
     work: Our work
-    crew: The crew
+    about: About Us
   contact_form:
     title: Contact Us
     name: Name
