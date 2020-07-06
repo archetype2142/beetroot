@@ -1,5 +1,3 @@
-= javascript_include_tag "https://www.google.com/recaptcha/api.js", defer: true, async: true 
-
 h1.title.has-text-centered.has-text-primary.has-mb-60 = t("contact_form.title").upcase
 .columns
   .column
@@ -7,19 +5,17 @@ h1.title.has-text-centered.has-text-primary.has-mb-60 = t("contact_form.title").
       = form_with url: contact_form_index_path, id: "captcha_form" do |f|
         .field
           .control.styled-input
-            label.label = t("contact_form.name").upcase
+            label.label.is-size-7-touch = t("contact_form.name").upcase
             = f.text_field :name, class: "input", placeholder: t("contact_form.name"), required: true
         .field
           .control.styled-input
-            label.label = t("contact_form.email").upcase
+            label.label.is-size-7-touch = t("contact_form.email").upcase
             = f.email_field :email, class: "input", placeholder: t("contact_form.email"), required: true
         .field
           .control.styled-input
-            label.label = t("contact_form.message").upcase
+            label.label.is-size-7-touch = t("contact_form.message").upcase
             = f.text_area :message, class: "textarea", placeholder: t("contact_form.message"), required: true
         .columns
-          .column
-            div class="g-recaptcha" data-sitekey="6Lfwn6QZAAAAANG-H6jsoz1XDe2qkQpFyGZuRa01" required="true"
           .column.is-flex.bottom_buttom
             .field
               .control
@@ -27,10 +23,10 @@ h1.title.has-text-centered.has-text-primary.has-mb-60 = t("contact_form.title").
     
   .column.is-flex.is-flex-centered style="flex-direction: column" id="right_section"
     .contact
-      h2.subtitle.is-size-4.has-text-primary 
+      h2.subtitle.is-size-4.is-size-5-touch.has-text-primary 
         |Phone: 
-        a href="tel:+48782085190" +48 782 085 190
-      h2.subtitle.is-size-4.has-text-primary Address: Warsaw, PL
+        a.is-size-5-touch href="tel:+48782085190" +48 782 085 190
+      h2.subtitle.is-size-4.is-size-5-touch.has-text-primary Address: Warsaw, PL
       .social
         a.social_icon href="https://www.facebook.com/Beetroot-Studio-101839018262811/"
           span.icon.is-large = image_tag "fb", alt: "facebook logo"

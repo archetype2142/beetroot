@@ -7,10 +7,11 @@ body {
   background-color: $beetroot_white;
   // background: rgb(208,16,86);
   // background: radial-gradient(circle, rgba(208,16,86,1) 0%, rgba(130,10,55,1) 55%, rgba(68,20,38,1) 89%);
+  overflow-x: hidden;
 }
 
 .canvas-container{
-  height: 100vh; 
+  height: 100%;
 }
 
 #got_image {
@@ -22,7 +23,7 @@ body {
 #canvas {
   position: absolute;
   width: 100%;
-  height: auto;
+  // height: auto;
   // z-index: -1;
 }
 

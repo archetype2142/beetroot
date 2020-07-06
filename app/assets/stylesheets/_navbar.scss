@@ -20,5 +20,11 @@ a.navbar-item:hover {
 // }
 
 .navbar-logo {
+  width: 150px;
+  height: auto;
   
+  @include touch {
+    width: 50px;
+    height: auto;
+  }
 }

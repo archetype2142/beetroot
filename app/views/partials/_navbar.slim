@@ -1,23 +1,3 @@
-/nav.navbar role="navigation" aria-label="main navigation"
-  .navbar-brand
-    a.navbar-item href="#{root_path}"
-      = image_tag "logo.png", width: "112", height: "128", alt: t("navbar.logo")
-    a.navbar-burger.burger role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
-      span aria-hidden="true"
-      span aria-hidden="true"
-      span aria-hidden="true"
-
-  .container
-    .navbar-menu id="navbarBasicExample"
-      .navbar-start
-        a.navbar-item = t("navbar.preproduction")
-        a.navbar-item = t("navbar.onset")
-        a.navbar-item = t("navbar.postproduction")
-
-        a.navbar-item href="#contact" = t("navbar.contact")
-        a.navbar-item = t("navbar.work")
-        a.navbar-item = t("navbar.crew")
-
 nav.navbar role="navigation" aria-label="main navigation"
   .navbar-brand
     a.navbar-item href="#{root_path}"
@@ -37,12 +17,3 @@ nav.navbar role="navigation" aria-label="main navigation"
       a.navbar-item href="#contact" = t("navbar.contact")
       a.navbar-item = t("navbar.work")
       a.navbar-item = t("navbar.about")
-
-    /<div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
